@@ -9,6 +9,9 @@ public class Planet : MonoBehaviour
     private Rigidbody rb; 
     private const float G = 6.674e-11f; // Directly using the calculated value
     public Vector3 intitialVelocity;
+    
+    private Simulation simulation;
+    
     void Start()
     {
         rb = GetComponent<Rigidbody>();
